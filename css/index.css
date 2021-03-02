@@ -1,3 +1,5 @@
+@import './iconfont.css';
+
 html{
   box-sizing: border-box;
 }
@@ -10,6 +12,7 @@ body{
   grid: auto auto / 1fr 900px 1fr;
   font: 14px/1.5 Arial;
   margin: 0;
+  word-break: break-word;
 }
 @media (max-width: 678px){
   body{
@@ -29,8 +32,8 @@ header{
   }
 }
 .head-img{
-  width: 60px;
-  height: 60px;
+  width: 80px;
+  height: 80px;
   border-radius: 50%;
 }
 header > h2{
@@ -56,6 +59,7 @@ main{
     grid-area: 2/1/2/3;
     grid: auto auto / 1fr;
     padding:0 15px;
+    box-sizing: border-box;
   }
 }
 
@@ -160,6 +164,9 @@ dl.demo-list dd .bar{
   .edu .demo-list > li{
     grid: auto auto auto / auto 1fr auto;
   }
+  .project .demo-list > li{
+    grid: auto / auto 1fr;
+  }
 }
 .edu .demo-list .edu-time{
   grid-area: 1/1/2/2;
@@ -175,8 +182,14 @@ dl.demo-list dd .bar{
   font-size: 16px;
 } 
 @media (max-width:678px){
+
   .edu .demo-list .edu-name{
-    grid-area: 2/1/3/3;
+    grid-area: 2/1/3/4;
+    margin: 0;
+    font-size: 16px;
+  } 
+  .project .demo-list .edu-name{
+    grid-area: 1/1/2/2;
     margin: 0;
     font-size: 16px;
   } 
@@ -196,6 +209,9 @@ dl.demo-list dd .bar{
   .edu .demo-list .edu-text{
     grid-area: 3/1/4/4;
   } 
+  .project .demo-list .edu-text{
+    grid-area: 2/2/3/3;
+  } 
 }
 .edu .demo-list .edu-text ul{
   margin: 0;
@@ -212,4 +228,16 @@ dl.demo-list dd .bar{
   .work .demo-list .edu-text{
     grid-area: 3/1/4/4;
   } 
+  .project .demo-list .edu-text{
+    grid-area: 2/1/3/4;
+  } 
+}
+
+a{
+  color:#4fc08d;
+  word-break: break-all;
+}
+.bcspan{
+  color:#4fc08d;
+  background-color: #eee;
 }
