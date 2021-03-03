@@ -13,6 +13,7 @@ body{
   font: 14px/1.5 Arial;
   margin: 0;
   word-break: break-word;
+  padding-bottom: 30px;
 }
 @media (max-width: 678px){
   body{
@@ -240,4 +241,7 @@ a{
 .bcspan{
   color:#4fc08d;
   background-color: #eee;
+}
+.myself{
+  grid-area: 2/2/3/3;
 }
