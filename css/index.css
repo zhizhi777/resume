@@ -14,7 +14,7 @@ body{
   margin: 0;
   word-break: break-word;
   padding-bottom: 30px;
-  background-color: #fff;
+  background-color: #fff !important;
 }
 @media (max-width: 678px){
   body{
